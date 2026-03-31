@@ -14,6 +14,8 @@ Your lists stay on your phone. Your voice commands briefly pass through our serv
 
 ListBud is a mobile application for creating and managing lists by voice command, developed and published by an independent developer.
 
+The data controller is: **Maël THEVENOT**, independent developer, based in **France**.
+
 This privacy policy describes how ListBud collects, uses, and protects your personal data, in accordance with the General Data Protection Regulation (GDPR) and other applicable laws.
 
 ---
@@ -53,7 +55,7 @@ ListBud does not collect:
 
 ---
 
-## 3. Purposes of Processing
+## 3. Purposes and Legal Basis of Processing
 
 Data passing through our server is used exclusively to:
 
@@ -62,6 +64,11 @@ Data passing through our server is used exclusively to:
 - Improve the reliability and performance of the application
 
 No processing for advertising, profiling, or resale purposes is performed.
+
+**Legal basis for processing (Article 6 GDPR):**
+
+- Processing of voice data is based on the performance of the service requested by the user (Article 6.1.b GDPR).
+- Anonymous metrics are based on our legitimate interest in improving application reliability (Article 6.1.f GDPR).
 
 ---
 
@@ -75,11 +82,11 @@ Data stored locally on your device is retained until the application is uninstal
 
 ---
 
-## 5. Hosting and Security
+## 5. Hosting, Sub-processors, and International Transfers
 
-Our server is hosted on **Railway** (Railway Corp., United States). Requests are secured via HTTPS. Server access is protected by an API key and a request rate limiting system.
+Our server is hosted on **Railway** (Railway Corp., United States). Requests are secured via HTTPS. Server access is protected by an API key and a request rate limiting system. This transfer to the United States is governed by the Standard Contractual Clauses (SCCs) adopted by the European Commission.
 
-Voice command interpretation is performed via the **OpenAI API** (OpenAI, LLC, United States). Data transmitted to OpenAI is subject to their own privacy policy, available at [openai.com](https://openai.com/policies/privacy-policy). OpenAI commits to not using API data for training its models.
+Voice command interpretation is performed via the **OpenAI API** (OpenAI, LLC, United States). Data transmitted to OpenAI is subject to their own privacy policy, available at [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy). OpenAI commits to not using API data for training its models. This transfer is governed by the Standard Contractual Clauses (SCCs) adopted by the European Commission and by OpenAI's privacy policy applicable to API data.
 
 Voice transcription on **iOS** uses Apple's Speech Recognition service. On **Android**, it uses Google's speech recognition service. These services are subject to Apple's and Google's respective privacy policies.
 
@@ -107,6 +114,8 @@ To exercise these rights or for any privacy-related questions, please contact us
 
 Note that since most of your data is stored locally on your device, you can delete it at any time directly in the application or by uninstalling it.
 
+You also have the right to **lodge a complaint** with a supervisory authority. In France, this is the **Commission Nationale de l'Informatique et des Libertés (CNIL)**: [cnil.fr](https://www.cnil.fr). If you reside in another EU member state, you may also contact your local data protection authority.
+
 ---
 
 ## 8. Minors
@@ -117,7 +126,7 @@ ListBud is not intended for children under the age of 13. We do not knowingly co
 
 ## 9. Changes to This Policy
 
-We reserve the right to modify this privacy policy at any time. In the event of a material change, you will be notified via an in-app notification. The date of the last update is shown at the top of this document.
+We reserve the right to modify this privacy policy at any time. In the event of a material change, you will be notified via an in-app notification or via the update of the date shown at the top of this document.
 
 Your continued use of the application after any modification constitutes your acceptance of the new policy.
 
@@ -133,4 +142,4 @@ For any questions regarding this privacy policy or to exercise your rights:
 
 ---
 
-*ListBud — Privacy Policy*
+*ListBud — Privacy Policy — Maël THEVENOT*
