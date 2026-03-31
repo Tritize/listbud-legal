@@ -14,6 +14,8 @@ Vos listes restent sur votre téléphone. Vos commandes vocales transitent briè
 
 ListBud est une application mobile de création et gestion de listes par commande vocale, développée et éditée par un développeur indépendant.
 
+Le responsable du traitement des données est : **Maël THEVENOT**, développeur indépendant, domicilié en **France**.
+
 Cette politique de confidentialité décrit comment ListBud collecte, utilise et protège vos données personnelles, conformément au Règlement Général sur la Protection des Données (RGPD) et aux législations applicables.
 
 ---
@@ -53,7 +55,7 @@ ListBud ne collecte pas :
 
 ---
 
-## 3. Finalités du traitement
+## 3. Finalités et base légale du traitement
 
 Les données transitant par notre serveur sont utilisées exclusivement pour :
 
@@ -62,6 +64,11 @@ Les données transitant par notre serveur sont utilisées exclusivement pour :
 - Améliorer la fiabilité et les performances de l'application
 
 Aucun traitement à des fins publicitaires, de profilage ou de revente n'est effectué.
+
+**Base légale du traitement (Article 6 du RGPD) :**
+
+- Le traitement des données vocales repose sur l'exécution du service demandé par l'utilisateur (Article 6.1.b du RGPD).
+- Les métriques anonymes reposent sur notre intérêt légitime à améliorer la fiabilité de l'application (Article 6.1.f du RGPD).
 
 ---
 
@@ -75,11 +82,11 @@ Les données stockées localement sur votre appareil sont conservées jusqu'à d
 
 ---
 
-## 5. Hébergement et sécurité
+## 5. Hébergement, sous-traitants et transferts internationaux
 
-Notre serveur est hébergé sur **Railway** (Railway Corp., États-Unis). Les requêtes sont sécurisées via HTTPS. L'accès au serveur est protégé par une clé API et un système de limitation du nombre de requêtes.
+Notre serveur est hébergé sur **Railway** (Railway Corp., États-Unis). Les requêtes sont sécurisées via HTTPS. L'accès au serveur est protégé par une clé API et un système de limitation du nombre de requêtes. Ce transfert vers les États-Unis est encadré par les Clauses Contractuelles Types (CCT) adoptées par la Commission Européenne.
 
-L'interprétation des commandes vocales est réalisée via l'**API OpenAI** (OpenAI, LLC, États-Unis). Les données transmises à OpenAI sont soumises à leur propre politique de confidentialité, disponible sur [openai.com](https://openai.com/policies/privacy-policy). OpenAI s'engage à ne pas utiliser les données de l'API pour l'entraînement de ses modèles.
+L'interprétation des commandes vocales est réalisée via l'**API OpenAI** (OpenAI, LLC, États-Unis). Les données transmises à OpenAI sont soumises à leur propre politique de confidentialité, disponible sur [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy). OpenAI s'engage à ne pas utiliser les données de l'API pour l'entraînement de ses modèles. Ce transfert est encadré par les Clauses Contractuelles Types (CCT) adoptées par la Commission Européenne et par la politique de confidentialité d'OpenAI applicable aux données API.
 
 La transcription vocale sur **iOS** utilise le service Speech Recognition d'Apple. Sur **Android**, elle utilise le service de reconnaissance vocale de Google. Ces services sont soumis aux politiques de confidentialité respectives d'Apple et de Google.
 
@@ -107,6 +114,8 @@ Pour exercer ces droits ou pour toute question relative à la confidentialité, 
 
 Notez que la majorité de vos données étant stockées localement sur votre appareil, vous pouvez les supprimer à tout moment directement dans l'application ou en la désinstallant.
 
+Vous disposez également du droit de **déposer une réclamation** auprès de l'autorité de contrôle compétente. En France, il s'agit de la **Commission Nationale de l'Informatique et des Libertés (CNIL)** : [cnil.fr](https://www.cnil.fr).
+
 ---
 
 ## 8. Mineurs
@@ -117,7 +126,7 @@ ListBud n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons p
 
 ## 9. Modifications de cette politique
 
-Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. En cas de modification substantielle, vous en serez informé via une notification dans l'application. La date de dernière mise à jour est indiquée en haut de ce document.
+Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. En cas de modification substantielle, vous en serez informé via une notification dans l'application ou via la mise à jour de la date figurant en haut de ce document.
 
 Votre utilisation continue de l'application après modification constitue votre acceptation de la nouvelle politique.
 
@@ -133,4 +142,4 @@ Pour toute question relative à cette politique de confidentialité ou pour exer
 
 ---
 
-*ListBud — Politique de confidentialité*
+*ListBud — Politique de confidentialité — Maël THEVENOT*
