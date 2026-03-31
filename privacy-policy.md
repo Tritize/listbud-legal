@@ -1,3 +1,8 @@
+---
+layout: default
+title: Politique de confidentialité
+---
+
 # Politique de confidentialité — ListBud
 
 **Dernière mise à jour : mars 2026**
