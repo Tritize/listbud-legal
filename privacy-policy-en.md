@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy
+---
+
 # Privacy Policy — ListBud
 
 **Last updated: March 2026**
