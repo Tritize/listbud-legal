@@ -5,13 +5,13 @@ title: Politique de confidentialité
 
 # Politique de confidentialité — ListBud
 
-**Dernière mise à jour : mars 2026**
+**Dernière mise à jour : octobre 2026**
 
 ---
 
 ## En résumé
 
-Vos listes restent sur votre téléphone. Vos commandes vocales transitent brièvement par notre serveur pour être traitées et ne sont jamais conservées. Nous ne vendons aucune donnée.
+Vos listes restent sur votre téléphone. Pour une commande vocale, l'enregistrement est envoyé à notre serveur pour être transcrit et interprété, puis supprimé : il n'est pas conservé sur notre serveur. Nous ne vendons aucune donnée.
 
 ---
 
@@ -29,24 +29,25 @@ Cette politique de confidentialité décrit comment ListBud collecte, utilise et
 
 ### 2.1 Données stockées localement sur votre appareil
 
-Les données suivantes sont stockées exclusivement sur votre téléphone et ne nous sont jamais transmises :
+Les données suivantes sont stockées sur votre téléphone :
 
 - Le contenu de vos listes (noms des listes, items)
-- Les catégories assignées à vos listes
+- Les catégories assignées à vos listes et vos catégories personnalisées
 - Les couleurs et préférences d'affichage
 
-> ✅ **Ces données ne quittent jamais votre appareil. Nous n'y avons aucun accès.**
+> ✅ **Ces données restent sur votre appareil. Seuls les éléments décrits en 2.2 sont transmis, au moment d'une commande vocale.**
 
-### 2.2 Données transitant par notre serveur
+### 2.2 Données transmises lors d'une commande vocale
 
-Lorsque vous utilisez la fonctionnalité de commande vocale, le texte transcrit par votre téléphone est envoyé à notre serveur pour être interprété par notre intelligence artificielle. Ce traitement est nécessaire au fonctionnement de l'application.
+Lorsque vous utilisez la commande vocale, l'enregistrement audio est envoyé à notre serveur, puis transcrit et interprété par l'API d'OpenAI. Ce traitement est nécessaire à la fonctionnalité vocale ; l'application reste utilisable sans elle.
 
 | Donnée | Traitement |
-|--------|------------|
-| Texte de votre commande vocale | Transmis au serveur pour interprétation par l'IA. Non conservé après traitement. |
-| Nom de la liste en cours | Transmis pour contextualiser la commande. Non conservé après traitement. |
-| Noms des items de la liste | Transmis pour permettre le cochage vocal. Non conservé après traitement. |
-| Métriques anonymes | Type d'action, durée de traitement, code d'erreur éventuel. Conservées jusqu'à 90 jours à des fins de débogage et d'amélioration. |
+| --- | --- |
+| Enregistrement audio de votre commande | Transcrit puis supprimé dès la fin du traitement. Non conservé sur notre serveur. |
+| Contexte de la liste en cours (nom, catégorie, intitulés de sections, préférence d'alphabet) | Transmis pour interpréter la commande. Non conservé après traitement. |
+| Noms de vos catégories personnalisées | Transmis pour classer correctement vos listes. Non conservés après traitement. |
+| Identifiant d'installation | Identifiant aléatoire généré par l'application, sans lien avec votre identité. Sert à limiter les abus ; seule une empreinte non réversible apparaît dans nos journaux. |
+| Métriques techniques | Type d'action, langue détectée, durée et niveaux sonores de l'enregistrement, nombre d'éléments, catégorie, erreurs éventuelles, associés à l'empreinte de l'identifiant d'installation. Conservées jusqu'à 90 jours à des fins de débogage et d'amélioration. |
 
 ### 2.3 Données non collectées
 
@@ -56,32 +57,37 @@ ListBud ne collecte pas :
 - Votre localisation géographique
 - Votre adresse email ou numéro de téléphone
 - Vos données de navigation ou publicités
-- Les enregistrements audio bruts — seule la transcription textuelle est traitée
-
+- Vos données de paiement — le paiement est traité par Google Play
+  
 ---
 
 ## 3. Finalités et base légale du traitement
 
-Les données transitant par notre serveur sont utilisées exclusivement pour :
+Les données traitées sont utilisées exclusivement pour :
 
 - Interpréter vos commandes vocales et en extraire les actions à effectuer
 - Associer vos commandes au contexte de votre liste en cours
 - Améliorer la fiabilité et les performances de l'application
-
+- Gérer votre abonnement ListBud Premium et vérifier votre accès
+- Prévenir les abus, en limitant le nombre de requêtes par installation
+  
 Aucun traitement à des fins publicitaires, de profilage ou de revente n'est effectué.
 
 **Base légale du traitement (Article 6 du RGPD) :**
 
 - Le traitement des données vocales repose sur l'exécution du service demandé par l'utilisateur (Article 6.1.b du RGPD).
-- Les métriques anonymes reposent sur notre intérêt légitime à améliorer la fiabilité de l'application (Article 6.1.f du RGPD).
+- La gestion de l'abonnement repose sur l'exécution du contrat (Article 6.1.b du RGPD).
+- Les métriques techniques et la prévention des abus reposent sur notre intérêt légitime à assurer la fiabilité et la sécurité de l'application (Article 6.1.f du RGPD).
 
 ---
 
 ## 4. Durée de conservation
 
-Les données vocales (transcriptions, noms de listes, items) ne sont pas conservées sur notre serveur après traitement. Chaque requête est traitée en temps réel puis immédiatement supprimée.
+L'enregistrement audio et les données de contexte (nom de liste, catégories, sections) ne sont pas conservés sur notre serveur : chaque requête est traitée en temps réel, puis l'enregistrement est supprimé. OpenAI applique à ces données sa propre politique de conservation des données d'API.
 
-Les métriques anonymes (type d'action, durée, erreurs) peuvent être conservées jusqu'à 90 jours à des fins de débogage et d'amélioration continue.
+Les métriques techniques peuvent être conservées jusqu'à 90 jours à des fins de débogage et d'amélioration continue.
+
+Les données d'abonnement (historique d'achats, identifiant anonyme) sont conservées par RevenueCat tant que nécessaire à la gestion de votre abonnement.
 
 Les données stockées localement sur votre appareil sont conservées jusqu'à désinstallation de l'application ou suppression manuelle.
 
@@ -91,9 +97,11 @@ Les données stockées localement sur votre appareil sont conservées jusqu'à d
 
 Notre serveur est hébergé sur **Railway** (Railway Corp., États-Unis). Les requêtes sont sécurisées via HTTPS. L'accès au serveur est protégé par une clé API et un système de limitation du nombre de requêtes. Ce transfert vers les États-Unis est encadré par les Clauses Contractuelles Types (CCT) adoptées par la Commission Européenne.
 
-L'interprétation des commandes vocales est réalisée via l'**API OpenAI** (OpenAI, LLC, États-Unis). Les données transmises à OpenAI sont soumises à leur propre politique de confidentialité, disponible sur [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy). OpenAI s'engage à ne pas utiliser les données de l'API pour l'entraînement de ses modèles. Ce transfert est encadré par les Clauses Contractuelles Types (CCT) adoptées par la Commission Européenne et par la politique de confidentialité d'OpenAI applicable aux données API.
+La transcription et l'interprétation des commandes vocales sont réalisées via l'**API OpenAI** (OpenAI, LLC, États-Unis). Les données transmises à OpenAI sont soumises à leur propre politique de confidentialité, disponible sur [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy). OpenAI s'engage à ne pas utiliser les données de l'API pour l'entraînement de ses modèles. Ce transfert est encadré par les Clauses Contractuelles Types (CCT) adoptées par la Commission Européenne et par la politique de confidentialité d'OpenAI applicable aux données API.
 
-La transcription vocale sur **iOS** utilise le service Speech Recognition d'Apple. Sur **Android**, elle utilise le service de reconnaissance vocale de Google. Ces services sont soumis aux politiques de confidentialité respectives d'Apple et de Google.
+La gestion des abonnements est assurée par **RevenueCat** (RevenueCat, Inc., États-Unis). RevenueCat reçoit l'historique de vos achats transmis par Google Play et un identifiant anonyme généré par l'application, afin de vérifier votre accès Premium. Ce transfert est encadré par les Clauses Contractuelles Types adoptées par la Commission Européenne.
+
+Les paiements sont traités par **Google Play**, selon la politique de confidentialité de Google. Aucune donnée bancaire ne nous est transmise, ni à RevenueCat.
 
 ---
 
@@ -101,7 +109,7 @@ La transcription vocale sur **iOS** utilise le service Speech Recognition d'Appl
 
 > ⛔ **Nous ne vendons, ne louons et ne partageons vos données avec aucun tiers à des fins commerciales ou publicitaires.**
 
-Les données transitent uniquement vers les prestataires techniques strictement nécessaires au fonctionnement de l'application (Railway, OpenAI), dans le cadre des finalités décrites ci-dessus.
+Les données transitent uniquement vers les prestataires techniques strictement nécessaires au fonctionnement de l'application (Railway, OpenAI, RevenueCat, et Google Play pour les paiements), dans le cadre des finalités décrites ci-dessus.
 
 ---
 
@@ -115,7 +123,7 @@ Conformément au RGPD, vous disposez des droits suivants :
 - **Droit d'opposition** : vous opposer à certains traitements
 - **Droit à la portabilité** : recevoir vos données dans un format lisible
 
-Pour exercer ces droits ou pour toute question relative à la confidentialité, vous pouvez nous contacter à l'adresse indiquée dans la section Contact.
+Pour exercer ces droits ou pour toute question relative à la confidentialité, vous pouvez nous contacter à l'adresse indiquée dans la section Contact. Pour une demande portant sur vos données d'abonnement, joignez l'identifiant de votre installation : un appui long sur « Version », en bas des Paramètres, le copie.
 
 Notez que la majorité de vos données étant stockées localement sur votre appareil, vous pouvez les supprimer à tout moment directement dans l'application ou en la désinstallant.
 
