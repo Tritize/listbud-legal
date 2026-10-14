@@ -2,7 +2,7 @@
 layout: default
 title: Privacy Policy
 ---
-
+*Version française : [Politique de confidentialité](https://tritize.github.io/listbud-legal/politique-confidentialite)*
 # Privacy Policy — ListBud
 
 **Last updated: October 2026**
